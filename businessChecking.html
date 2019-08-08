@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>企业验证</title>
+  <link rel="stylesheet" href="css/businessChecking.css" />
+</head>
+
+<body>
+  <div class="warp">
+    <div class="header">
+      <img src="imgs/checking_banner.png" alt="" class="bannerbg" />
+      <div class="nav">
+        <div class="logo"><img src="imgs/index_logo.png" /></div>
+        <ul class="nav-ul">
+          <li><a href="index.html">首页</a></li>
+          <li class="select-bg"><a href="brandCard.html">品牌名片</a></li>
+          <li><a href="successfullist.html">成功案例</a></li>
+          <li><a href="activitiesAim.html">活动宗旨</a></li>
+          <li><a href="recomment.html">推荐品牌</a></li>
+        </ul>
+        <div class="brandvip"><a href="vip.html">品牌VIP</a></div>
+        <div class="brandtel">
+          <div class="tel-icon"><img src="imgs/tel.png" alt="" /></div>
+          400-160-6527
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-topdiv">
+        <div class="main-topdiv-ul">
+          <div>企业验证</div>
+          <div>品牌信息</div>
+          <div>身份验证</div>
+        </div>
+        <div class="main-sche">
+          <div class="ul-li">
+            <div class="lidiv"></div>
+            <div class="lidiv"></div>
+            <div class="lidiv"></div>
+          </div>
+          <div class="main-top-bg">
+            <div class="yellow"></div>
+            <div class="block"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-footer">
+          <div class="check-intro dotted-line">
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p><span>*</span>品牌logo</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg companyimg-logo">
+                    <img src="imgs/list_logo.png" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                    <input type="file" name="file" class="newfile">
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p><span>*</span>营业执照</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <input type="file" name="file" class="newfile">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p><span>*</span>商标注册证</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <input type="file" name="file" class="newfile">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+          </div>
+          <div class="company-other">
+            <p class="company-other-title">其他证明</p>
+            <p class="addcont">
+              如企业有转让、购买证明，请按照系统提示的模式上传相应的资质证明。
+              填写“诚信证明书”增加企业诚信度。
+            </p>
+          </div>
+          <div class="check-intro" id="hideCer">
+            <div class="show-certificate" id="hidediv">
+              <p>收起证书</p>
+              <img src="imgs/icon_other.png" alt="" />
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p>商标变更证明</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <input type="file" name="file" class="newfile">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p>商标授权书</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                    <input type="file" name="file" class="newfile">
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p>商标转让证明</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <input type="file" name="file" class="newfile">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p>受理通知书</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                    <input type="file" name="file" class="newfile">
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p>续展证明</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                    <input type="file" name="file" class="newfile">
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="dotted-line paddingtop"></div>
+            <div class="company-infor">
+              <div class="company-infor-title">
+                <p><span>*</span>品牌logo</p>
+              </div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                    <input type="file" name="file" class="newfile">
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title"></div>
+              <div class="company-infor-img">
+                <div class="company-dateils">
+                  <div class="companyimg">
+                    <img src="imgs/compan_img01.jpg" class="bgimg">
+                    <div class="new-companyimg">
+                      <div class="new-companyimg-new">
+                        <img src="imgs/upload_icon.png" alt="" />
+                        <p class="newimg">点击上传图片</p>
+                      </div>
+                      <input type="file" name="file" class="selectImg" />
+                    </div>
+                  </div>
+                  <div class="company-new">
+                    <img src="imgs/upload_icon.png" alt="" />
+                    从新上传
+                    <input type="file" name="file" class="newfils">
+                  </div>
+                  <div class="company-del">
+                    <img src="imgs/icon_delete.png" alt="" />
+                    删除
+                  </div>
+                </div>
+                <p class="remind">（ JPG、PNG、GIF格式，大小在5M以内 ）</p>
+              </div>
+            </div>
+            <div class="company-infor">
+              <div class="company-infor-title"></div>
+              <div class="company-infor-img">
+                <div class="footer-btnmore">
+                  <img src="imgs/icon_add.png" alt="Sincerity" id="addSincerity" />
+                  <p class="remind">点击“+”添加更多诚信证明书</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-certificate" id="showCer">
+            <p>展开添加其他证书</p>
+            <img src="imgs/icon_other.png" alt="" />
+          </div>
+          <input class="main-next" type="submit" value="下一步" id="nextDiv" />
+        </div>
+        <!-- 第二部分 -->
+        <div class="main-input">
+          <ul>
+            <form>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>品牌名称</p>
+                </div>
+                <div class="company-content">
+                  <input type="text" placeholder="请输入品牌名称（与商标注册证保持一致)" name="text" required autofocus="autofocus" />
+                  <p class="input-blur">请输入品牌名称</p>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>公司名称</p>
+                </div>
+                <div class="company-content">
+                  <input type="text" placeholder="请输入公司名称" name="text" required />
+                  <p class="input-blur">请输入公司名称</p>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>成立时间</p>
+                </div>
+                <div class="company-content">
+                  <select name="select1" id="">
+                    <option value="1">2013</option>
+                    <option value="2">2014</option>
+                    <option value="3">2015</option>
+                    <option value="4">2016</option>
+                    <option value="5">2017</option>
+                  </select>
+                  <span>年</span>
+                  <select name="select2" id="">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                  </select>
+                  <span>月</span>
+                  <select name="select3" id="">
+                    <option value="1">11</option>
+                    <option value="2">12</option>
+                    <option value="3">13</option>
+                    <option value="4">14</option>
+                    <option value="5">15</option>
+                  </select>
+                  <span> 日</span>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>官方网址</p>
+                </div>
+                <div class="company-content">
+                  <input type="url" placeholder="请输入网址" name="url" required />
+                  <p class="input-blur">请输入正确网址</p>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>公司地址</p>
+                </div>
+                <div class="company-content">
+                  <input type="text" placeholder="请输入公司地址(实际经营地址)" name="text" />
+                  <p class="input-blur">请输入公司地址</p>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>经营范围</p>
+                </div>
+                <div class="company-content">
+                  <textarea placeholder="请输入经营范围" required></textarea>
+                  <p class="input-blur">请输入经营范围</p>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>品牌简介</p>
+                </div>
+                <div class="company-content">
+                  <textarea placeholder="请输入品牌简介" required></textarea>
+                  <p class="input-blur">请输入品牌简介</p>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>公司简介</p>
+                </div>
+                <div class="company-content">
+                  <textarea placeholder="请输入公司简介" required></textarea>
+                  <p class="input-blur">请输入公司简介</p>
+                </div>
+              </li>
+              <li>
+                <div class="company-name">
+                  <p><span>*</span>公司地址</p>
+                </div>
+                <div class="company-content">
+                  <textarea placeholder="请输入经营范围" required></textarea>
+                  <p class="input-blur">请输入公司地址</p>
+                </div>
+              </li>
+              <li id="nemeLi">
+                <div class="company-name">
+                  <input type="text" placeholder="请输入标题" required />
+                </div>
+                <div class="company-content">
+                  <textarea placeholder="请输入描述" required></textarea>
+                  <img src="imgs/icon_del.png" alt="" class="deltextarea" />
+                </div>
+              </li>
+              <li id="addLiUp">
+                <div class="company-name"></div>
+                <div class="company-content">
+                  <div class="footer-btnmore">
+                    <img src="imgs/icon_add.png" alt="" id="addNewInput" />
+                    <p class="remind">点击“+”添加更多名片信息</p>
+                  </div>
+                  <div class="brandctp">
+                    <p>品牌名片预览</p>
+                    <div class="brandborder"></div>
+                  </div>
+                  <div class="btnup-down">
+                    <button id="nexttel">下一步</button>
+                    <button id="upBtnFooterShow">
+                      上一步
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </form>
+          </ul>
+        </div>
+        <div class="main-iphone">
+          <ul>
+            <li>
+              <div class="company-name">
+                <p><span>*</span>手机号码</p>
+              </div>
+              <div class="company-content">
+                <input type="tel" placeholder="请输入手机号" id="myTel" />
+                <p class="input-blur">请输入正确手机号</p>
+              </div>
+            </li>
+            <li>
+              <div class="company-name">
+                <p><span>*</span>验证码</p>
+              </div>
+              <div class="company-content">
+                <input type="text" placeholder="请输入验证码" class="input-code" id="codeNuunmber" />
+                <div class="unmber">
+                  <span id="unmberCode" title='点击切换'></span>
+                </div>
+                <p class="input-blur">请输入正确验证码</p>
+              </div>
+            </li>
+            <li>
+              <div class="company-name">
+                <p><span>*</span>短信验证码</p>
+              </div>
+              <div class="company-content">
+                <input type="text" placeholder="请输入短信验证码" id="iphoneNumber" />
+                <bottom class="getunmber">获取验证码</bottom>
+                <p class="input-blur">请输入短信验证码</p>
+              </div>
+            </li>
+            <li>
+              <div class="company-name"></div>
+              <div class="company-content">
+                <div class="btnup-down">
+                  <button class="upbtn" id="joinbrand">加入品牌名片</button>
+                  <input type="button" value="上一步" class="downbtn" id="upbtnInputShow" required />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <img src="imgs/foot_logo.png" alt="" />
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="footer-main-box">
+          <div class="footer-main-box-title">
+            <h4>友情链接<span>Navigation</span></h4>
+          </div>
+          <div class="friend">
+            <ul>
+              <li><a href="#">品牌排行网</a></li>
+              <li><a href="#">品评网</a></li>
+              <li><a href="#">中国排行网</a></li>
+              <li><a href="#">影视网</a></li>
+              <li><a href="#">央视网</a></li>
+              <li><a href="#">优酷网</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">京东</a></li>
+              <li><a href="#">淘宝网</a></li>
+              <li><a href="#">凤凰网</a></li>
+              <li><a href="#">影视网</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-main-box">
+          <div class="footer-main-box-title">
+            <h4>联系我们<span>Contact us</span></h4>
+          </div>
+          <div class="usdiv">
+            <p>客服电话:</p>
+            <p>400-160-6527</p>
+            <p>邮箱:</p>
+            <p>kefu@brandzw.com</p>
+          </div>
+        </div>
+        <div class="footer-qrcode">
+          <img src="imgs/qr.png" alt="" />
+          <p>关注公众号</p>
+          <p>了解更多</p>
+        </div>
+      </div>
+      <div class="footer-about">
+        Copyright 品牌中网(www.brandzw.com) 京ICP备19006167号-1
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery-1.7.min.js"></script>
+<script src="js/businessChecking.js"></script>
+<script src="js/jquery.code.js"></script>
+
+</html>

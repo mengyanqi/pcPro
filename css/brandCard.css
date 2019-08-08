@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+.warp {
+  width: 100%;
+  height: auto;
+}
+.header {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.bannerbg {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
+.nav {
+  width: 93.5%;
+  height: 80px;
+  margin: 0 auto;
+  line-height: 80px;
+  border-bottom: 2px rgba(255, 255, 255, 0.2) solid;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 60px 0px 60px;
+}
+.nav ul {
+  width: 460px;
+  right: 0%;
+  margin-left: 40%;
+}
+.nav ul li {
+  width: 92px;
+  float: left;
+  text-align: center;
+  list-style: none;
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  position: static;
+  /* 清除定位 */
+}
+.nav ul li a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+.nav ul li:hover{
+  background-color: #eabb47;
+}
+.brandvip:hover{
+  background-color: #eabb47;
+}
+.brandvip:hover a{
+  color: #ffffff;
+}
+.logo {
+  width: 181px;
+  height: 42px;
+  margin-top: 0.8%;
+}
+.brandvip {
+  width: 155px;
+  height: 80px;
+  font-size: 28px;
+  font-family: 'iekieyuelianghouyiti';
+  font-weight: bold;
+  text-align: center;
+}
+.brandvip a {
+  text-decoration: none;
+  color: rgba(255, 228, 0, 1);
+}
+.brandtel {
+  width: 205px;
+  font-size: 20px;
+  font-family: DIN-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.tel-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+}
+.select {
+  background: #eabb47;
+}
+.search {
+  width: 860px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 332px;
+  margin-bottom: 80px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.search img {
+  width: 17px;
+  height: 18px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.search input {
+  height: 60px;
+  width: 83%;
+  padding-left: 5px;
+  line-height: 60px;
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  color: rgba(125, 125, 128, 1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+input:focus {
+  outline: none;
+}
+button:active {
+  outline: none;
+}
+.search button {
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei-Bold';
+  font-weight: bold;
+  color: rgba(234, 187, 71, 1);
+  line-height: 22px;
+  width: 90px;
+  height: 40px;
+  border-left: 2px solid rgba(230, 230, 230, 1);
+  background: #ffffff;
+}
+.joincard {
+  width: 140px;
+  height: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+.joincard p {
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei-Bold';
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  background: #d8aa39;
+  border-radius: 4px;
+}
+.joincard p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+.cardlist {
+  padding-bottom: 90px;
+  padding-top: 40px;
+  width: 100%;
+  background-size: 100%;
+}
+
+.cardmain {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.tendiv {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 56px;
+  height: 77px;
+  background: url(../imgs/ten.png);
+  background-size: 100%;
+}
+.cardmain-list {
+  width: 285px;
+  height: 425px;
+  margin-right: 19px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 3px 10px 0px rgba(202, 157, 43, 0.3);
+}
+.cardmain-list:last-child {
+  margin-right: 0px;
+}
+.cardmain-logo {
+  width: 234px;
+  height: 139px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px #ebebed solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardmain-list h3 {
+  font-size: 20px;
+  font-family: 'MicrosoftYaHei-Bold';
+  font-weight: bold;
+  color: rgba(43, 44, 54, 1);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.cardmain-list > p {
+  width: 227px;
+  height: 80px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+
+  line-height: 21px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.cardmain-list > p a {
+  text-decoration: none;
+  color: rgba(125, 125, 128, 1);
+}
+.cardmain-more {
+  display: none;
+  width: 120px;
+  height: 36px;
+  margin: 0 auto;
+  border: 1px solid #d8aa39;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  cursor: pointer;
+}
+.cardmain-more a{
+  text-decoration: none;  
+  color: #d8aa39;
+}
+.cardmain:last-child .cardmain-list:last-child {
+  background: url(../imgs/card_last_bg.png) no-repeat;
+  background-size: 100%;
+}
+.advert {
+  width: 1200px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.words-advert {
+  width: 100%;
+  background: url(../imgs/g_next_bg.png) no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+.words-advert .wordtitle {
+  font-size: 36px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  line-height: 0px;
+  padding-top: 60px;
+  color: rgba(52, 52, 52, 1);
+}
+.words-advert > p {
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 46px;
+  color: rgba(102, 102, 102, 1);
+}
+.footer {
+  background: rgba(26, 25, 27, 1);
+  padding-top: 70px;
+}
+.footer-top {
+  width: 1200px;
+  margin: 0 auto;
+  background: url(../imgs/foot_line.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.footer-top-left {
+  width: 218px;
+  height: 87px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-main {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main-box {
+  width: 260px;
+}
+.footer-main-box-title {
+  height: 50px;
+  border-bottom: 1px #d2d2d2 solid;
+}
+.footer-main-box-title h4 {
+  font-size: 24px;
+  font-family: 'MicrosoftYaHei-Bold';
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 18px;
+}
+.footer-main-box-title h4 span {
+  font-size: 14px;
+  font-family: SourceHanSansCN-Regular;
+  font-weight: 400;
+  color: rgba(152, 152, 152, 1);
+  line-height: 24px;
+  margin-left: 35px;
+}
+.friend {
+  display: flex;
+  justify-content: space-around;
+}
+.friend ul {
+  width: 49%;
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  list-style: none;
+  line-height: 35px;
+  margin-top: 20px;
+}
+.friend a {
+  text-decoration: none;
+  color: rgba(178, 178, 178, 1);
+}
+.usdiv p:nth-child(odd) {
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  margin-top: 32px;
+  color: rgba(178, 178, 178, 1);
+}
+.usdiv p:nth-child(even) {
+  font-size: 24px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  margin-top: 13px;
+  color: rgba(178, 178, 178, 1);
+}
+.footer-qrcode {
+  width: 174px;
+  height: 174px;
+  background: #ffffff;
+}
+.footer-qrcode img {
+  padding: 8%;
+  width: 84%;
+  margin-bottom: 30px;
+}
+.footer-qrcode p {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 26px;
+}
+.footer-about {
+  height: 56px;
+  background: rgba(28, 25, 25, 1);
+  font-size: 12px;
+  font-family: 'MicrosoftYaHei';
+  font-weight: 400;
+  text-align: center;
+  color: rgba(125, 125, 128, 1);
+  margin-top: 112px;
+  line-height: 56px;
+}

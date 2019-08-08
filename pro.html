@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>jindutiao</title>
+  <style>
+    .main-topdiv {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .main-topdiv-ul {
+      width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      color: #666666;
+    }
+
+    .main-sche {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .main-sche .ul-li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .main-sche .ul-li .lidiv {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #cccccc;
+    }
+
+    .main-top-bg {
+      position: absolute;
+      top: 0px;
+      height: 12px;
+      width: 96%;
+      left: 2%;
+      margin-top: 0.8%;
+      display: flex;
+    }
+
+    .select {
+      background-color: yellow;
+    }
+
+    .yellow {
+      width: 28%;
+      height: 12px;
+      background-color: yellow;
+    }
+
+    .block {
+      width: 72%;
+      height: 12px;
+      background-color: #cccccc;
+    }
+
+    .yellowfont {
+      font-size: 20px;
+      color: yellow;
+    }
+
+    .momo {
+      width: 200px;
+      height: 200px;
+      margin-left: 200px;
+      border: 1px #f55 solid;
+      padding: 10px;
+      overflow-x: none;
+      overflow-y: auto;
+      /* scrollbar-arrow-color: none;
+        scrollbar-face-color: #f1ad2c;
+        scrollbar-highlight-color: green; */
+    }
+
+    .momo::-webkit-scrollbar-button {
+      background: #f55;
+    }
+
+    .ming {
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ming">
+    <img id="pic" src="" style="border:1px solid #f55;height: 100px;width: 100px;" />
+    <input id="upload" name="file" accept="image/*" type="file"
+      style="width: 100px;height: 100px;position: absolute;opacity: 0;" />
+  </div>
+  <form id="uploadForm" action="#" method="post" enctype="multipart/form-data">
+    <p>上传文件： <input type="file" name="file" /></p>
+    <input type="submit" value="上传" />
+  </form>
+  <div class="main-top">
+    <div class="main-title">
+      <p class="select-font"></p>
+      <p></p>
+      <p></p>
+    </div>
+    <!-- 进度条 -->
+    <div class="schedule" id="schedule">
+      <ul>
+        <li></li>
+        <li id="scheTwo"></li>
+        <li id="scheThere"></li>
+      </ul>
+      <div class="pro-sche">
+        <p id="go-sche"></p>
+        <p id="down-sche"></p>
+      </div>
+    </div>
+  </div>
+  <div class="main-topdiv">
+    <div class="main-topdiv-ul">
+      <div>企业验证</div>
+      <div>品牌信息</div>
+      <div>身份验证</div>
+    </div>
+    <div class="main-sche">
+      <div class="ul-li">
+        <div class="lidiv"></div>
+        <div class="lidiv"></div>
+        <div class="lidiv"></div>
+      </div>
+      <div class="main-top-bg">
+        <div class="yellow"></div>
+        <div class="block"></div>
+      </div>
+    </div>
+  </div>
+  <input type="button" value="下一个" class="next" />
+  <input type="button" value="zai下一个" class="nextok" />
+  <div id="momo" style="overflow-y:scroll; overflow-x:hidden; width:100px; height:100px;">
+    重庆前卫克罗姆表业有限责任公司是全球排名第四的燃气计量器具供应商。是中国重庆前卫科技集团有限公司和德国
+    埃尔斯特公司于2001年1月共同投资组建的合资企业，注册资金5000万人民币。主要具供应商。是中国重庆前卫科技集团有限公司和德国
+    埃尔斯特公司于2001年1月共同投资组建的合资企业，注册资金5000万人民币。第四的燃气计量器具供应商。是中国重庆前卫科技集团有限公司和德国
+    埃尔斯特公司于2001年1月共同投资组建的合资企业，注册资金50
+  </div>
+  <p><input type="file" id="upfile"></p>
+  <p><input type="button" id="upJS" value="用原生JS上传"></p>
+  <p><input type="button" id="upJQuery" value="用jQuery上传"></p>
+
+
+  <script>
+    /*原生JS版*/
+    document.getElementById("upJS").onclick = function () {
+      /* FormData 是表单数据类 */
+      var fd = new FormData();
+      var ajax = new XMLHttpRequest();
+      fd.append("upload", 1);
+      /* 把文件添加到表单里 */
+      fd.append("upfile", document.getElementById("upfile").files[0]);
+      ajax.open("post", "{php echo $this->createWebUrl('bisai',array('op'=>'uploadPDF'));}", true);
+
+      ajax.onload = function () {
+        console.log(ajax.responseText);
+      };
+
+      ajax.send(fd);
+
+    }
+
+    /* jQuery 版 */
+    $('#upJQuery').on('click', function () {
+      var fd = new FormData();
+      fd.append("upload", 1);
+      fd.append("upfile", $("#upfile").get(0).files[0]);
+      $.ajax({
+        url: "{php echo $this->createWebUrl('bisai',array('op'=>'uploadPDF'));}",
+        type: "POST",
+        processData: false,
+        contentType: false,
+        data: fd,
+        success: function (d) {
+          console.log(d);
+        }
+      });
+    });
+  </script>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var ss = $('#upload').attr('value')
+    console.log(ss)
+    $('.main-topdiv-ul>div')
+      .eq(0)
+      .addClass('yellowfont')
+      .siblings()
+      .removeClass('yellowfont')
+    $('.lidiv')
+      .eq(0)
+      .css('background-color', 'yellow')
+    $('.nextok').hide()
+    $('.next').click(function () {
+      $('.lidiv')
+        .eq(1)
+        .css('background-color', 'yellow')
+      $('.main-topdiv-ul>div')
+        .eq(1)
+        .addClass('yellowfont')
+        .siblings()
+        .removeClass('yellowfont')
+      $('.yellow').animate({ width: '75%' })
+      $('.block').animate({ width: '25%' })
+      $('.nextok').show()
+    })
+  })
+  $('.nextok').click(function () {
+    $('.lidiv')
+      .eq(2)
+      .css('background-color', 'yellow')
+    $('.main-topdiv-ul>div')
+      .eq(2)
+      .addClass('yellowfont')
+      .siblings()
+      .removeClass('yellowfont')
+    $('.yellow').animate({ width: '100%' })
+    $('.block').animate({ width: '0%' })
+  })
+</script>
+<script type="text/javascript">
+  /**
+   * 前台页面验证url网址输入是否正确
+   */
+  function postComment() {
+    //验证url网址
+    if ($("input[name='url']").val()) {
+      var str = $("input[name='url']").val()
+      //判断URL地址的正则表达式为:http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?
+      //下面的代码中应用了转义字符"\"输出一个字符"/"
+      var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/
+      var objExp = new RegExp(Expression)
+      if (objExp.test(str) != true) {
+        alert('网址格式不正确！请重新输入')
+        return false
+      } else {
+        alert('网址正确！')
+      }
+    }
+
+  }
+
+</script>
+
+
+</html>
